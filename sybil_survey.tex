@@ -13,6 +13,11 @@
 % ---------------------------------------------------------------------------------------------------------------
 
 \documentclass{acm_proc_article-sp}
+\usepackage{enumitem}% http://ctan.org/pkg/enumitem
+\usepackage{footmisc}
+\makeatletter
+\newcommand\footnoteref[1]{\protected@xdef\@thefnmark{\ref{#1}}\@footnotemark}
+\makeatother
 
 \begin{document}
 
@@ -73,6 +78,7 @@ Laurens Versluis\\
 %\keywords{Sybils, Sybil Attack, }
 
 \input{sections/introduction}
+\input{sections/datasets}
 
 %
 % The following two commands are all you need in the
