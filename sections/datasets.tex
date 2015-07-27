@@ -7,7 +7,7 @@
 		\centering
 		\begin{tabular}{|c|l|l|l|l|l|}
 			\hline
-			Year & Mechanism & \# nodes & \# sybils & Real-world data & Dataset availability \\ \hline
+			Year & Mechanism & \# Nodes & \# Sybils & Real-world data & Dataset availability \\ \hline
 			
 			2004 & Overlay defense$^*$ \cite{singh2004defending} & 5050 & 1010 & No & 
 			\begin{minipage}{1.2in}
@@ -95,7 +95,7 @@
 					\item 94
 				\end{enumerate}
 				\vskip 1pt
-			\end{minipage} & \makecell[l]{ All possible pairs:\\ 1. 5.050 \\ 2. 4.371} & Yes &
+			\end{minipage} & \makecell[l]{ All possible pairs:\\ 1. 5.050 \\ 2. 4.371} & \makecell[l]{Yes \\ (Since it concerns real \\ devices in this paper,\\we perceive it as real\\ data)} &
 			\begin{minipage}{1.2in}
 				\vskip 1pt
 				\begin{itemize}[noitemsep,topsep=0pt,leftmargin=*]
@@ -106,17 +106,35 @@
 				\vskip 1pt
 			\end{minipage}  \\ \hline
 			
-			2009 & SybilInfer \cite{danezis2009sybilinfer} & 33.000 & 
-			\begin{minipage}{0.75in}
+			2009 & SybilInfer \cite{danezis2009sybilinfer} &
+			\begin{minipage}{0.9in}
 				\vskip 1pt
-				\begin{itemize}[noitemsep,topsep=0pt,leftmargin=*]
-					\item 2000
-					\item No ground-truth
-				\end{itemize}
+				\begin{enumerate}[noitemsep,topsep=0pt,leftmargin=*]
+					\item 1.000
+					\item $\pm$33.000
+				\end{enumerate}
 				\vskip 1pt
 			\end{minipage}
-			 & Yes &
-			 \begin{minipage}{1.2in}
+			& 
+		 	\begin{minipage}{0.9in}
+		 		\vskip 1pt
+		 		\begin{enumerate}[noitemsep,topsep=0pt,leftmargin=*]
+		 			\item 100
+		 			\item $\pm$ 2.000
+		 		\end{enumerate}
+		 		\vskip 1pt
+		 	\end{minipage}
+		 	 & 
+	 	 	\begin{minipage}{0.9in}
+	 	 		\vskip 1pt
+	 	 		\begin{enumerate}[noitemsep,topsep=0pt,leftmargin=*]
+	 	 			\item No
+	 	 			\item Yes
+	 	 		\end{enumerate}
+	 	 		\vskip 1pt
+	 	 	\end{minipage}
+			&
+			\begin{minipage}{1.2in}
 			 	\vskip 1pt
 			 	\begin{itemize}[noitemsep,topsep=0pt,leftmargin=*]
 			 		\item No link in paper
@@ -124,7 +142,7 @@
 			 		\item Author response pending
 			 	\end{itemize}
 			 	\vskip 1pt
-			 \end{minipage} \\ \hline
+			\end{minipage} \\ \hline
 			 
 			2009 & Timestamp series \cite{park2009defense} & No simulation & No simulation & N/A & N/A \\ \hline
 			
@@ -146,7 +164,7 @@
 				\begin{enumerate}[noitemsep,topsep=0pt,leftmargin=*]
 					\item 496.622
 					\item 2.339
-				-	\item 480.189
+					\item 480.189
 					\item 6.040
 					\item 105.283
 				\end{enumerate}
@@ -174,16 +192,37 @@
 				\vskip 1pt
 			\end{minipage} \\ \hline
 			
-			2011 & GateKeeper \cite{tran2011optimal} & 33.000 & 
-			\begin{minipage}{0.75in}
+			2011 & GateKeeper \cite{tran2011optimal} & 
+			\begin{minipage}{0.9in}
 				\vskip 1pt
-				\begin{itemize}[noitemsep,topsep=0pt,leftmargin=*]
-					\item 2000
-					\item No ground-truth
-				\end{itemize}
+				\begin{enumerate}[noitemsep,topsep=0pt,leftmargin=*]
+					\item Varying (Synthetic)
+					\item 446.181
+					\item 539.242
+				\end{enumerate}
 				\vskip 1pt
 			\end{minipage}
-			& Yes &
+			& 
+			\begin{minipage}{0.75in}
+				\vskip 1pt
+				\begin{enumerate}[noitemsep,topsep=0pt,leftmargin=*]
+					\item Varying
+					\item 43.725 sybils admitted
+					\item 76.572 sybils admitted
+				\end{enumerate}
+				\vskip 1pt
+			\end{minipage}
+			& 
+			\begin{minipage}{0.9in}
+				\vskip 1pt
+				\begin{enumerate}[noitemsep,topsep=0pt,leftmargin=*]
+					\item No
+					\item Yes
+					\item Yes
+				\end{enumerate}
+				\vskip 1pt
+			\end{minipage}
+			&
 			\begin{minipage}{1.2in}
 				\vskip 1pt
 				\begin{itemize}[noitemsep,topsep=0pt,leftmargin=*]
@@ -195,14 +234,8 @@
 			\end{minipage} \\ \hline
 			
 			2011 & Mitigating$^*$ \cite{kakhki11mitigating} & 
-			\begin{minipage}{0.9in}
-				\vskip 1pt
-				\begin{itemize}[noitemsep,topsep=0pt,leftmargin=*]
-					\item 65.000
-					\item Sybil network attached, no information on size
-				\end{itemize}
-				\vskip 1pt
-			\end{minipage}
+			\makecell[l]{$> 65.000$\\
+					(Sybil network \\attached, no \\information on \\size)}
 			& Not mentioned & 
 			Yes, real sybils unkown 
 			& \begin{minipage}{1.2in}
@@ -215,7 +248,16 @@
 				\vskip 1pt
 			\end{minipage} \\ \hline
 			
-			2011 & Leveraging$^*$ \cite{chiluka2012leveraging} & & & & \\ \hline
+			2011 & Leveraging$^*$ \cite{chiluka2012leveraging} & 542.133 & 16.264 (3\%) & Yes & 
+			\begin{minipage}{1.2in}
+				\vskip 1pt
+				\begin{itemize}[noitemsep,topsep=0pt,leftmargin=*]
+					\item No link in paper
+					\item Public availability unknown
+					\item Author response pending
+				\end{itemize}
+				\vskip 1pt
+			\end{minipage} \\ \hline
 			
 			2011 & Incorperating trust$^*$ \cite{mohaisen2011keep} & & & & \\ \hline
 			
@@ -225,8 +267,6 @@
 			
 			2013 & SybilShield \cite{shi2013sybilshield} &  & & & \\ \hline
 			
-			2011 & GateKeeper \cite{tran2011optimal} &  & & & \\ \hline
-			
 			2014 & SybilRank \cite{cao2014understanding} & & & & \\ \hline
 			
 			
@@ -234,6 +274,3 @@
 		\caption{Current state of the art reviewed on their datasets. ( * = mechanism was not named by the author(s)).}
 		\label{tbl:state-of-the-art-reviewed}
 	\end{table*}
-	
-	
-	\footnote{* = The proposed mechanism has not be named by the authors.}
