@@ -1,11 +1,14 @@
-\section{Datasets}
+\section{Data used in scientific articles}
 	
-	In this section, the current state of the art on Sybil attacks and their datasets is reviewed.
-	We list well-known papers on the sybil attack and list several aspects including the year, size, amount of sybils, real or artificial data and availability of the dataset.
+	We have composed a list of scientific articles on the topic of the sybil attack. 
+	We list -- where applicable and available -- the year, amount of nodes in the dataset, amount of sybils, whether it concerns real or synthetic data and whether the dataset is publicly available and mentioned in the paper.
+	The results of this can be found in Table \ref{tbl:state-of-the-art-reviewed}.
 	
-	\begin{table*}
-		\centering
-		\begin{tabular}{|c|l|l|l|l|l|}
+	We observe that none of the papers mention the availability of their dataset in their paper. 
+	Also, all papers do not use a dataset with a ground truth.
+	
+	\onecolumn
+	\begin{longtable}{|c|l|l|l|l|l|}
 			\hline
 			Year & Mechanism & \# Nodes & \# Sybils & Real-world data & Dataset availability \\ \hline
 			
@@ -259,18 +262,118 @@
 				\vskip 1pt
 			\end{minipage} \\ \hline
 			
-			2011 & Incorperating trust$^*$ \cite{mohaisen2011keep} & & & & \\ \hline
+			2011 & Incorperating trust$^*$ \cite{mohaisen2011keep} &
+			\begin{minipage}{0.9in}
+				\vskip 1pt
+				\begin{enumerate}[noitemsep,topsep=0pt,leftmargin=*]
+					\item 4.158
+					\item 82.168
+					\item 11.204
+					\item 8.638
+					\item 7.066
+					\item 33.696
+					\item 75.879
+					\item 614.981
+					\item 1.000.000
+					\item 1.000.000
+					\item 1.000.000
+					\item 1.000.000
+					\item 1.134.890
+				\end{enumerate}
+				\vskip 1pt
+			\end{minipage}
+			& Not mentioned & Yes &
+			\begin{minipage}{1.2in}
+				\vskip 1pt
+				\begin{itemize}[noitemsep,topsep=0pt,leftmargin=*]
+					\item No link in paper
+					\item Public availability unknown
+					\item Author response pending
+				\end{itemize}
+				\vskip 1pt
+			\end{minipage} \\ \hline
 			
-			2012 & SybilDefender \cite{wei2012sybildefender} &  & & & \\ \hline
+			2012 & SybilDefender \cite{wei2012sybildefender} & 
+			\begin{minipage}{0.9in}
+				\vskip 1pt
+				\begin{enumerate}[noitemsep,topsep=0pt,leftmargin=*]
+					\item 3.072.441
+					\item 3.097.165
+				\end{enumerate}
+				\vskip 1pt
+			\end{minipage}
+			& \makecell[l]{10.000, 5.000, 1.000\\ (Compromised nodes)} & Yes &
+			\begin{minipage}{1.2in}
+				\vskip 1pt
+				\begin{itemize}[noitemsep,topsep=0pt,leftmargin=*]
+					\item No link in paper
+					\item Public availability unknown
+					\item Author response pending
+				\end{itemize}
+				\vskip 1pt
+			\end{minipage} \\ \hline
 			
-			2013 & Sok \cite{alvisi2013sok} &  & & & \\ \hline
+			2013 & Sok \cite{alvisi2013sok} & 
+			\begin{minipage}{0.9in}
+				\vskip 1pt
+				\begin{enumerate}[noitemsep,topsep=0pt,leftmargin=*]
+					\item 718.115
+					\item 26.588
+					\item 63.392
+					\item 92.117
+				\end{enumerate}
+				\vskip 1pt
+			\end{minipage}
+			& Various & Yes & 
+			\begin{minipage}{1.2in}
+				\vskip 1pt
+				\begin{itemize}[noitemsep,topsep=0pt,leftmargin=*]
+					\item No link in paper
+					\item Public availability unknown
+					\item Author response pending
+				\end{itemize}
+				\vskip 1pt
+			\end{minipage} \\ \hline
 			
-			2013 & SybilShield \cite{shi2013sybilshield} &  & & & \\ \hline
+			2013 & SybilShield \cite{shi2013sybilshield} & 100.000  & 500 (generated) & \makecell[l]{Yes, sybils are\\ synthetic} &
+			\begin{minipage}{1.2in}
+				\vskip 1pt
+				\begin{itemize}[noitemsep,topsep=0pt,leftmargin=*]
+					\item No link in paper
+					\item Public availability unknown
+					\item Author response pending
+				\end{itemize}
+				\vskip 1pt
+			\end{minipage} \\ \hline
 			
-			2014 & SybilRank \cite{cao2014understanding} & & & & \\ \hline
+			2014 & SybilRank \cite{cao2014understanding} & 
+				\begin{minipage}{0.9in}
+					\vskip 1pt
+					\begin{enumerate}[noitemsep,topsep=0pt,leftmargin=*]
+						\item 10.000
+						\item 18.772
+						\item 9.877
+						\item 10.000
+						\item 7.115
+						\item 10.000
+						\item 10.000
+						\item 10.000
+					\end{enumerate}
+					\vskip 1pt
+				\end{minipage}			
+			& \makecell[l]{5.000\\ (connected to\\ each dataset)} & \makecell[l]{Yes, sybils are\\ synthetic} &
+			\begin{minipage}{1.2in}
+				\vskip 1pt
+				\begin{itemize}[noitemsep,topsep=0pt,leftmargin=*]
+					\item No link in paper
+					\item Public availability unknown
+					\item Author response pending
+				\end{itemize}
+				\vskip 1pt
+			\end{minipage} \\ \hline
 			
-			
-		\end{tabular}
-		\caption{Current state of the art reviewed on their datasets. ( * = mechanism was not named by the author(s)).}
-		\label{tbl:state-of-the-art-reviewed}
-	\end{table*}
+			\caption{Current state of the art reviewed on their datasets. ( * = mechanism was not named by the author(s)).}
+			\label{tbl:state-of-the-art-reviewed}
+		\end{longtable}
+		
+	\twocolumn
