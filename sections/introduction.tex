@@ -1,11 +1,17 @@
 \section{Introduction}
-
-	The sbyil attack \cite{douceur2002sybil} is nowadays a well-known attack on both centralized and decentralized systems and an active research area.
-	Sybil attacks occur in a variety of systems. 
-	Attacks can occur in sensor networks , social networks, content rating systems \cite{kakhki11mitigating}, vehicular ad hoc networks and many more.
+	\label{sct:introduction}
+	The sbyil attack is a well-known attack on both centralized and decentralized systems and an active research area.
+	In the sybil attack, malicious users create an unbounded number of \emph{sybil} identities to i.e. gain a large influence in a network.
+	Often these sybils are indistinguishable from real users and therefore a threat to systems relying on user input \cite{douceur2002sybil}.
+	Decentralized systems are particularly vulnerable.
+	Without a central authority to certify users, decentralized systems are vulnerable to a variety of attacks, including the sybil attack \cite{jetter2010quantitative}.
+	Douceur \cite{douceur2002sybil} argues that a central authority which certifies all identies may tbe the only effective solution, however even when a centralized authority is present, it still may not be feasible to certify real users and can even compromise the anonymity of peers \cite{margolin2005quantifying, dewan2005securing}.
+	
+	Sybil attacks occur in a variety of systems and networks. 
+	Attacks can occur in sensor networks , social networks, content rating systems \cite{kakhki11mitigating}, vehicular ad hoc networks \cite{park2009defense} and many more.
 	At this point in time, there are already surveys on surveys \cite{koll2014state, mohaisen2013sybil, viswanath2011analysis}.
 	
-	The focus of this survey will not be yet another survey on the current state of the art, but  will focus on real-world attacks using Sybil, eclipse and sinkholing techniques. 
+	The focus of this survey will not be yet another survey on the current state of the art, but will focus on real-world attacks using Sybil, eclipse and sinkholing techniques. 
 	We perceive these to be belonging to the same broad class of attacks. 
 	%The goal is to provide a list of scientific articles which are based on a publicly available real-world datasets.
 	The goal is to provide a list of scientific articles and describe the datasets used in their evaluations.
