@@ -1,20 +1,28 @@
 \section{Introduction}
 	\label{sct:introduction}
-	The sbyil attack is a well-known attack on both centralized and decentralized systems and an active research area.
-	In the sybil attack, malicious users create an unbounded number of \emph{sybil} identities to i.e. gain a large influence in a network.
-	Often these sybils are indistinguishable from real users and therefore a threat to systems relying on user input \cite{douceur2002sybil}.
+	The sbyil attack was first described by Douceur \cite{douceur2002sybil}. Nowadays, it is a well-known attack on both centralized and decentralized systems and an active research area.
+	In the sybil attack, malicious users create an unbounded number of \emph{sybil} identities.
+	Using these sybils, malicious users can perform several attacks. 
+	Hoffman et al. (2009) \nocite{hoffman2009survey} identified five classes of attacks: 
+	\begin{enumerate}
+		\item Self-promoting: Attackers boost their own reputation or increase their gain/profit.
+		\item Whitewashing: Attackers avoid consequences of abusing the system and repair their own reputation to continue their attacks.
+		\item Slandering: Attackers manipulate the reputation of other users inside the system by e.g. false reports.
+		\item Orchestrated: A combination of the three attacks mentioned above.
+		\item Denial of Service: Attackers prevent the calculation and dissemination of reputation values. 
+	\end{enumerate}
+	Often these sybils are indistinguishable from real users and therefore a threat to systems relying on user input.
 	Decentralized systems are particularly vulnerable.
 	Without a central authority to certify users, decentralized systems are vulnerable to a variety of attacks, including the sybil attack \cite{jetter2010quantitative}.
-	Douceur \cite{douceur2002sybil} argues that a central authority which certifies all identies may tbe the only effective solution, however even when a centralized authority is present, it still may not be feasible to certify real users and can even compromise the anonymity of peers \cite{margolin2005quantifying, dewan2005securing}.
+	Douceur argues that a central authority which certifies all identies may tbe the only effective solution, however even when a centralized authority is present, it still may not be feasible to certify real users and can even compromise the anonymity of peers \cite{margolin2005quantifying, dewan2005securing}.
 	
-	Sybil attacks occur in a variety of systems and networks. 
-	Attacks can occur in sensor networks , social networks, content rating systems \cite{kakhki11mitigating}, vehicular ad hoc networks \cite{park2009defense} and many more.
-	At this point in time, there are already surveys on surveys \cite{koll2014state, mohaisen2013sybil, viswanath2011analysis}.
-	
+	Sybil attacks occur in a variety of systems and networks e.g. overlay networks \cite{singh2004defending}, social networks \cite{cao2014understanding, chiluka2012leveraging, mohaisen2011keep}, content rating systems \cite{kakhki11mitigating, tran2009sybil} and vehicular ad hoc networks \cite{park2009defense}.
+	Because of the impact and difficulty of these attacks, there are already surveys on surveys \cite{koll2014state, mohaisen2013sybil, viswanath2011analysis}.\\
 	The focus of this survey will not be yet another survey on the current state of the art, but will focus on real-world attacks using Sybil, eclipse and sinkholing techniques. 
 	We perceive these to be belonging to the same broad class of attacks. 
 	%The goal is to provide a list of scientific articles which are based on a publicly available real-world datasets.
 	The goal is to provide a list of scientific articles and describe the datasets used in their evaluations.
+	Sybils can be assigned a taxonomy as they can be compromised nodes, fake nodes \cite{newsome2004sybil} or whitewashed nodes, however we do not make this distinction inside datasets.  
 	The outcome of this survey will be the largest structured collection of various datasets which are collected if the data is publicly available or if the authors are willing to share their data. Additional datasets are added as well which were either created by means of manual annotation or by other parties.\\
 	The list of datasets will, for instance, cover fake profiles on social networking sites (Facebook), communication systems (Twitter), search engine link farms, auction sites, review sites, sock puppets on news sites, and various other Internet-deployed systems. 
 	A key challenge is the diversity and formatting of these datasets. 
